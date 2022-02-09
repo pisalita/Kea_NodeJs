@@ -1,0 +1,20 @@
+{
+  "name": "express-rest-api",
+  "version": "1.0.0",
+  "description": "First node.js REST-Api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node backend/app.js",
+    "server": "nodemon backend/app.js"
+  },
+  "author": "Jimmi",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

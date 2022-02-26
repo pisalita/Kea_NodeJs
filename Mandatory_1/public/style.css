@@ -106,3 +106,7 @@ summary:hover {
   font-size: 16px;
   border-radius: 20px;
 }
+
+.code-comment {
+  color: green;
+}

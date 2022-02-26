@@ -59,11 +59,23 @@ nav {
 
 .nav-subject:hover {
   background-color: darkgray;
-  color: white;
 }
 
 .nav-subject.active {
   background-color: darkgray;
+}
+
+.nav-subject a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.nav-subject.active a {
+  color: white;
+}
+
+.nav-subject:hover a {
   color: white;
 }
 

@@ -294,4 +294,40 @@ console.log(foundItem);
       </div>
     </details>
   </section>
+
+  <section class="content-section">
+    <h2>Spread operator</h2>
+    <br />
+    <p>
+      The spread operator is very useful, as it provide a very clean and short
+      way of doing what some of these array methods are doing. If you for
+      example need to copy one array into another array, you can easily use the
+      spread operator to do this very quickly, with very little code required.
+      When using the spread operator, you basicly rip out the guts of an array
+      or object, and can then assign those values into a new array or new
+      object. You can even add more data along with the other data you are
+      getting from the spread operator.
+    </p>
+    <details>
+      <summary>Code Snippet</summary>
+      <div class="snippet-content">
+        <pre>
+          <code>
+const arr1 = [1, 2, 3, 4, 5];
+let arr2 = [];
+let arr3 = [];
+
+<p class="code-comment">// Using the spread operator to pass all the values 
+// from arr1 into a new array arr2</p>
+arr2 = [...arr1];
+console.log(arr2);
+
+<p class="code-comment">// Doing the same here, but also adding values with it</p>
+arr3 = [...arr1, 7, 8, 9];
+console.log(arr3);
+          </code>
+        </pre>
+      </div>
+    </details>
+  </section>
 </main>

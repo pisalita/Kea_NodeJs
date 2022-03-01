@@ -3,6 +3,7 @@
 
   <section class="content-section">
     <h2>V8 Javascript engine</h2>
+    <br />
     <p>
       The node.js is a cross-playform javascript runtime environment. It uses
       the V8 javascript engine, which is the core of google chrome. This allows
@@ -12,6 +13,7 @@
 
   <section class="content-section">
     <h2>Running files in node</h2>
+    <br />
     <p>
       Since node is a runtime environment on the backend, we can tell the server
       to run a specific file. The way we do it is by navigating to the folder,
@@ -22,6 +24,7 @@
 
   <section class="content-section">
     <h2>NPM/Yarn</h2>
+    <br />
     <p>
       Npm and yarn are packet managers that comes along with node.js. They are a
       big part of making node.js solutions, and are very important tools. They
@@ -33,6 +36,7 @@
 
   <section class="content-section">
     <h2>Package.json</h2>
+    <br />
     <p>
       When installing third party software/libraries with a package manager, the
       dependency gets added in the package.json file. This is where dependencies
@@ -80,6 +84,7 @@
 
   <section class="content-section">
     <h2>Node_modules</h2>
+    <br />
     <p>
       This folder is where all the dependency installations get stored. This
       folder is typically not pushed and shared, since it can get quite huge.
@@ -91,6 +96,7 @@
 
   <section class="content-section">
     <h2>Package-lock.json</h2>
+    <br />
     <p>
       This file hold more details about the dependencies, like a more specified
       version number on each one. It describes the exact tree that was
@@ -101,11 +107,49 @@
 
   <section class="content-section">
     <h2>Nodemon</h2>
-    <p></p>
+    <br />
+    <p>
+      nodemon is a command-line interface (CLI) utility that wraps your Node
+      app, watches the file system, and automatically restarts the process. When
+      you are using node you have to restart on your own to see the changes you
+      made But nodemon watches the particular path for any changes. If you make
+      any changes in your file, nodemon will restart it for you.
+    </p>
   </section>
 
   <section class="content-section">
     <h2>Heroku</h2>
-    <p></p>
+    <br />
+    <p>
+      Heroku is a container-based cloud Platform as a Service (PaaS). Developers
+      use Heroku to deploy, manage, and scale modern apps. See the code snippet
+      to get an idea of the deployment process.
+    </p>
+    <details>
+      <summary>Code Snippet</summary>
+      <div class="snippet-content">
+        <pre>
+          <code>
+
+<p class="code-comment">// step-1: Push the whole app to your git repository</p>
+$ git add .
+$ git commit -m "message"
+$ heroku login
+Here you will get promted for your heroku login details
+
+<p class="code-comment">// step-2: Create the app on Heroku</p>
+$ heroku create
+
+<p class="code-comment">// step-3: Push code to heroku main</p>
+$ git push heroku main
+
+If you need to deploy a subfolder, run this command instead:
+$ git subtree push --prefix <subfolder> heroku main
+
+<p class="code-comment">// That's it, you have now deployed on heroku!</p>
+          </code>
+        </pre>
+      </div>
+    </details>
   </section>
 </main>

@@ -2,7 +2,49 @@
   <h1>SSR</h1>
 
   <section class="content-section">
-    <h2>Headline</h2>
+    <h2>What is SSR - and why use it?</h2>
+    <br />
+    <p>
+      Server side rendering makes the server do all the hard work, instead of
+      the client. When doing server side rendering, the client do not have to
+      use much cpu power to assemble and prepare all the pages to display to the
+      user. This have some benefits. One being that the page is fast, since
+      everything is loaded and compiled beforehand. It also is more optimal for
+      SEO reasons, because now a web crawler will not see an empty site when
+      browsing your site, and therefore you might rank higher on search engines.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <h2>The public folder</h2>
+    <br />
+    <p>
+      We can make our static files, like css, javascript, and image files
+      available to the client via. the public folder. A little bit of setup is
+      required, as we need to specify that this folder is open to the public. It
+      is not getting served per default! It is really quite simple, and require
+      just one line of code.
+    </p>
+
+    <details>
+      <summary>Code Snippet</summary>
+      <div class="snippet-content">
+        <pre>
+          <code>
+<p class="code-comment">// now all files you put in your public folder
+// can be access by the client.
+</p>
+app.use(express.static("public"));
+          </code>
+        </pre>
+      </div>
+    </details>
+  </section>
+
+  <section class="content-section">
+    <h2>What is SSR - and why use it?</h2>
+    <br />
+    <p></p>
 
     <details>
       <summary>Code Snippet</summary>

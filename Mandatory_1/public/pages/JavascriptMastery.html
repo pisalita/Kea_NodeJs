@@ -154,7 +154,7 @@ function functionDeclaration( PARAMETERS ) {
 <p class="code-comment">// function call</p>
 functionDeclaration();
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------
 <p class="code-comment">
 // function expression - NOT hoisted and you can NOT call this function above it
 </p>
@@ -166,7 +166,7 @@ const functionExpression = function ( PARAMETERS ) {
 </p>
 functionExpression();
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------
 <p class="code-comment">
 // arrow function - NOT hoisted and you can NOT call this function above it
 </p>
@@ -238,7 +238,7 @@ const items = [
   { name: "Keyboard", price: 25 },
 ];
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------
 <p class="code-comment">
 // The filter method
 </p>
@@ -252,7 +252,7 @@ const filteredItems = items.filter((item) => {
 console.log(filteredItems);
 console.log(items);
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------
 <p class="code-comment">
 // The map method
 </p>
@@ -266,7 +266,7 @@ const itemNames = items.map((item) => {
 console.log(itemNames);
 console.log(items);
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------
 <p class="code-comment">
 // The forEach method
 </p>
@@ -277,12 +277,13 @@ items.forEach((item) => {
   console.log(item.name);
 });
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------
 <p class="code-comment">
 // The find method
 </p>
 <p class="code-comment">
-// Loops through an array and return the first object where the condition is true.
+// Loops through an array and return the first object 
+// where the condition is true.
 </p>
 const foundItem = items.find((item) => {
   return item.name === "Book";

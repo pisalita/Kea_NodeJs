@@ -8,26 +8,29 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
 const fs = require("fs");
+const path = __dirname;
 
 // SSR start - Getting and assembling the components and pages on server startup
 
 // Components
-const nav = fs.readFileSync("./public/components/nav.html").toString();
-const footer = fs.readFileSync("./public/components/footer.html").toString();
+const nav = fs.readFileSync(path + "/public/components/nav.html").toString();
+const footer = fs
+  .readFileSync(path + "/public/components/footer.html")
+  .toString();
 
 // Pages
 const javascriptMastery = fs
-  .readFileSync("./public/pages/javascriptMastery.html")
+  .readFileSync(path + "/public/pages/javascriptMastery.html")
   .toString();
 
-const nodeJs = fs.readFileSync("./public/pages/nodeJs.html").toString();
+const nodeJs = fs.readFileSync(path + "/public/pages/nodeJs.html").toString();
 
-const restApi = fs.readFileSync("./public/pages/restApi.html").toString();
+const restApi = fs.readFileSync(path + "/public/pages/restApi.html").toString();
 
-const Ssr = fs.readFileSync("./public/pages/Ssr.html").toString();
+const Ssr = fs.readFileSync(path + "/public/pages/Ssr.html").toString();
 
 const terminalCommands = fs
-  .readFileSync("./public/pages/terminalCommands.html")
+  .readFileSync(path + "/public/pages/terminalCommands.html")
   .toString();
 
 // Assemble pages

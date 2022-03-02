@@ -35,6 +35,61 @@
   </section>
 
   <section class="content-section">
+    <h2>File System</h2>
+    <br />
+    <p>
+      To handle file operations like creating, reading, deleting, etc., 
+      Node.js provides an inbuilt module called FS (File System). 
+      To use this File System module, use the require() method.
+    </p>
+    <p>Common use for the file system includes:
+      read files,
+      write files,
+      append files,
+      close files,
+      delete files.
+    </p>
+    <details>
+      <summary>Code Snippet</summary>
+      <div class="snippet-content">
+        <pre>
+          <code>
+<p class="code-comment">// importing the fs module.</p>      
+const fs = require('fs');   
+
+<p class="code-comment">// example: reading a file with fs</p>  
+const javascriptMastery = fs
+  .readFileSync("./public/pages/javascriptMastery.html")
+  .toString();
+          </code>
+        </pre>
+      </div>
+    </details>
+  </section>
+
+  <section class="content-section">
+    <h2>__dirname</h2>
+    <br />
+    <p>
+      __dirname is an environment variable that tells you the absolute path 
+      of the directory containing the currently executing file. It is very
+      useful, as it provide a quick and easy way to dynamicly get the
+      absolute path on any machine.
+    </p>
+    <details>
+      <summary>Code Snippet</summary>
+      <div class="snippet-content">
+        <pre>
+          <code>
+<p class="code-comment">// exampls: console logging the __dirname</p>      
+console.log(__dirname);
+          </code>
+        </pre>
+      </div>
+    </details>
+  </section>
+
+  <section class="content-section">
     <h2>Package.json</h2>
     <br />
     <p>

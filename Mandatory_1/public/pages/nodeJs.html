@@ -192,11 +192,18 @@ Here you will get promted for your heroku login details
 <p class="code-comment">// step-2: Create the app on Heroku</p>
 $ heroku create
 
+<p class="code-comment">// step-2.5: Remove old relationship,
+//if creating a new heroku app. (not needed if it is a new project)
+//then re-add the remote url
+</p>
+$ git remote rm heroku
+$ heroku git:remote -a "Your heroku url"
+
 <p class="code-comment">// step-3: Push code to heroku main</p>
 $ git push heroku main
 
 If you need to deploy a subfolder, run this command instead:
-$ git subtree push --prefix 'subfolder' heroku main
+$ git subtree push --prefix "subfolder" heroku master
 
 <p class="code-comment">// That's it, you have now deployed on heroku!</p>
           </code>
